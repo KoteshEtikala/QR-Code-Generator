@@ -1,5 +1,5 @@
 let body=document.querySelector("body")
-
+let image=document.createElement("img");
 let form=document.querySelector("form")
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
@@ -11,8 +11,6 @@ form.addEventListener("submit",(e)=>{
         alert("Please Enter The URL")
     }else{
         let qr=`https://chart.googleapis.com/chart?cht=qr&chs=400x400&chl=${input}`
-        let image=document.createElement("img");
-        console.log(image);
         image.setAttribute("src",qr);
         body.append(image);
 
