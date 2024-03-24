@@ -27,7 +27,7 @@ body{
     border-radius: 25px;
     padding-left: 20px;
     outline: none;
-    border: 2px solid black;
+    border: 2px solid gainsboro;
 }
 #url:focus{
     border: 2px solid rgb(65, 80, 247); 
@@ -39,13 +39,13 @@ body{
     height: 40px;
     width: 110px;
     border-radius: 25px;
-    border: 1.5px solid navajowhite;
-    outline: blue;
+    border: 1.5px solid gainsboro;
+    outline:none;
 }
 img{
     height: 300px;
     width: 300px;
-    border: 2px solid black; 
+    /* border: 2px solid black;  */
     box-shadow: 8px 8px 8px black;
     position: relative;
     top: 10px;
