@@ -1,11 +1,22 @@
+let body=document.querySelector("body")
+
 let form=document.querySelector("form")
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
     let input=document.querySelector("#url").value
     console.log(input)
-    let qr=`https://chart.googleapis.com/chart?cht=qr&chs=400x400&chl=${input}`
-    let image=document.querySelector("#image")
+    // let image=document.querySelector("#image")
     // console.dir(image)
-    image.src=qr
+    if(input==""){
+        alert("Please Enter The URL")
+    }else{
+        let qr=`https://chart.googleapis.com/chart?cht=qr&chs=400x400&chl=${input}`
+        let image=document.createElement("img");
+        console.log(image);
+        image.setAttribute("src",qr);
+        body.append(image);
+
+    }
+    
     
 })
